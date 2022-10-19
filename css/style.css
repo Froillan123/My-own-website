@@ -1,0 +1,80 @@
+body{
+    font-family: tahoma;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #8A6E0B;
+    transition: all .4s ease;
+}
+.nav header{
+    font-size: 1.6rem;
+    color: black;
+    text-align: center;
+    line-height: 70px;
+    background: rgb(27, 153, 25);
+    user-select: none;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul a{
+     display: inline-block;
+     height: 100%;
+     width: 100%;
+     line-height: 65px;
+     color: white;
+     padding-left: 40px;
+     border-top: 1px solid rgba(255, 255, 255, .1);
+     border-bottom: 1px solid whitesmoke;
+     transition: 0.3s;
+     text-decoration: none;
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+.nav ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #button,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: black;
+}
+label #button{
+    left: 40px;
+    top: 25px;
+    font-size: 30px;
+    transition: all .4s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: black;
+    padding: 4px 9px;
+    transition: all .4s ease;
+}
+#check:checked ~ .nav{
+    left: 0;
+}
+#check:checked ~ label #button{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
