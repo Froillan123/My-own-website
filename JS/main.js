@@ -10,4 +10,4 @@ menuBtns.forEach(menuBtn => {
 
 overlay.addEventListener("click", () => {
     navBar.classList.remove("open");
-})
+});

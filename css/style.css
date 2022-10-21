@@ -45,7 +45,7 @@ nav .sidebar{
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #fff;
+    background-color: rgb(240, 218, 189);
     height: 100%;
     width: 260px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
@@ -74,7 +74,7 @@ nav.open .sidebar{
     border-radius: 5px;
 }
 .lists .nav-link:hover{
-    background-color: #4070f4;
+    background-color: #3caa3c;
 }
 .nav-link .icon{
     margin-right: 15px;
@@ -122,9 +122,6 @@ nav.open ~ .overlay{
     padding: 40px;
     width: 60%;
     margin: 3rem auto 0 auto;
-    border: 20px solid;
-    border-image-source: url(../img/border1.jpg);
-    border-image-slice: 100;
 }
 .content img{
     height: 250px;
@@ -134,7 +131,7 @@ nav.open ~ .overlay{
 .content h2{
     color: greenyellow;
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 40px;
 }
 .content p{
     color: grey;
@@ -142,13 +139,17 @@ nav.open ~ .overlay{
     font-weight: 500;
     font-size: 19px;
 }
+span{
+    color: rebeccapurple;
+    font-size: 35px;
+}
 @media screen and (max-width:700px){
     .content{
         width: 100%;
         margin:0px;
         background-color: white;
         justify-content: space-around;
-        display: flex;
+        display: grid;
     }
     .content img{
         height: 0px;
@@ -164,6 +165,9 @@ nav.open ~ .overlay{
         color: greenyellow;
         margin-left: -30px;
         margin-bottom: 10px;
+    }
+    span{
+        font-size: 25px;
     }
 }
 
