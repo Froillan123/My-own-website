@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Sale</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   
+</head>
+<body>
+    <nav>
+        <div class="bars">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="barname">Coffee Bean</span>
+        </div>
+
+        <div class="sidebar">
+            <div class="bars">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="inside-barname">Coffee Bean</span>
+        </div>
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <a href="index.html" class="nav-link">
+                            <i class="bx bx-home icon"></i>
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="menu.html" class="nav-link">
+                            <i class="fa fa-folder icon"></i>
+                            <span class="link">Menu</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="" class="nav-link">
+                            <i class="bx bxs-book-alt icon"></i>
+                            <span class="link">Reservation</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="" class="nav-link">
+                            <i class="bx bxl-blogger icon"></i>
+                            <span class="link">Blog</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="" class="nav-link">
+                            <i class="bx bxs-contact icon"></i>
+                            <span class="link">Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom-content">
+                    <li class="list">
+                        <a href="" class="nav-link">
+                            <i class="bx bxs-user icon"></i>
+                            <span class="link">Log In</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="Signup.html" class="nav-link">
+                            <i class="bx bx-user-plus"></i>
+                            <span class="link">Sign Up</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="overlay"></section>
+    <script>
+        const navBar = document.querySelector("nav"),
+      menuBtns = document.querySelectorAll(".menu-icon"),
+      overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+    menuBtn.addEventListener("click", () => {
+        navBar.classList.toggle("open");
+    });
+});
+
+overlay.addEventListener("click", () =>{
+    navBar.classList.remove("open");
+});
+    </script>
+</body>
+</html>
